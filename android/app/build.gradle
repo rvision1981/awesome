@@ -148,3 +148,8 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+project.ext.sentryCli = [
+        logLevel: "debug",
+        flavorAware: false
+]
